@@ -24,14 +24,14 @@ public class Main {
         //System.out.println(percent + "%");
         if (percent < 25) {
             return prize.EighthPrize.name();
-        } else if (percent < 40) {
+        } else if (percent < 85) {
             List<String> listPrize = Arrays.asList(prize.SeventhPrize.name(), prize.SixthPrize.name(), prize.FifthPrize.name(), prize.FourthPrize.name());
             return listPrize.get(new Random().nextInt(listPrize.size()));
-        } else if (percent < 50) {
+        } else if (percent < 95) {
             return prize.ThirdPrize.name();
-        } else if (percent < 54) {
+        } else if (percent < 98) {
             return prize.SecondPrize.name();
-        } else if (percent == 54) {
+        } else if (percent == 99) {
             return prize.FirstPrize.name();
         }
         return prize.EighthPrize.name();
